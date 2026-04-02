@@ -1,0 +1,68 @@
+/* BEM: Header Block */
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.header__title {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.header__subtitle {
+  color: #999;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.header__content {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Home Header (home page) */
+.home-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-header__title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.home-header__tagline {
+  font-size: 1.1rem;
+  color: #aaaaaa;
+  letter-spacing: 0.5px;
+}
+
+/* Page Header (utility pages) */
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.page-header__content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.page-header__title {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.page-header__subtitle {
+  color: #999;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}

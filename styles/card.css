@@ -1,0 +1,148 @@
+/* BEM: Card Block */
+
+.card {
+  background: var(--card-bg);
+  border: 1.5px solid var(--border-color);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.15);
+}
+
+/* Large card variant */
+.card--large {
+  padding: 32px;
+  margin-bottom: 32px;
+  border-radius: 16px;
+}
+
+/* Option card (home page) */
+.option-card {
+  background: var(--card-bg);
+  border: 1.5px solid var(--border-color);
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.1) 0%,
+    rgba(244, 114, 182, 0.05) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.option-card:hover {
+  border-color: #7c3aed;
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(124, 58, 237, 0.2);
+}
+
+.option-card:hover::before {
+  opacity: 1;
+}
+
+.option-card__icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.option-card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin: 8px 0 0 0;
+}
+
+.option-card__desc {
+  font-size: 0.95rem;
+  color: #a0a0a0;
+}
+
+.option-card__subtitle {
+  font-size: 0.9rem;
+  color: #888;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.option-card__arrow {
+  font-size: 1.5rem;
+  color: var(--accent);
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+  margin-top: 12px;
+}
+
+.option-card:hover .option-card__arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Result card */
+.result-card {
+  background: var(--card-bg);
+  border: 1.5px solid var(--border-color);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.2s ease;
+}
+
+.result-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.15);
+}
+
+.result-card__header {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.result-card__icon {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.result-card__title {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.result-card__subtitle {
+  color: #a0a0a0;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.result-card__vibe {
+  color: #888;
+  font-style: italic;
+  margin: 12px 0 0 0;
+  font-size: 0.95rem;
+}

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream It - Life Planner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container page-content">
+      <header class="page-header">
+        <a href="index.html" class="back-btn">← back</a>
+        <div>
+          <h1>dream it ✨</h1>
+          <p class="page-subtitle">
+            tell us about your ideal life and we'll find the jobs for it
+          </p>
+        </div>
+      </header>
+
+      <div class="form-section">
+        <form id="dreamForm">
+          <div class="form-group">
+            <label for="housing">where you wanna live? 🏠</label>
+            <select id="housing" required>
+              <option value="">-- pick one --</option>
+              <option value="studio">studio apartment</option>
+              <option value="1br">1 bedroom apartment</option>
+              <option value="2br">2 bedroom apartment</option>
+              <option value="house">house with a yard</option>
+              <option value="luxury">luxury apartment/penthouse</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="transportation">how you getting around? 🚗</label>
+            <select id="transportation" required>
+              <option value="">-- choose --</option>
+              <option value="transit">public transit (bus, train, subway)</option>
+              <option value="car">one car</option>
+              <option value="car-nice">nice/luxury car</option>
+              <option value="bike">bike + transit</option>
+              <option value="flexible">doesn't matter (flexible)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="vacation">vacation vibes? 🌴</label>
+            <select id="vacation" required>
+              <option value="">-- pick --</option>
+              <option value="2weeks">2 weeks a year is chill</option>
+              <option value="3weeks">3 weeks (solid balance)</option>
+              <option value="4weeks">4+ weeks (need that time off)</option>
+              <option value="flexible">summers off (teacher energy)</option>
+              <option value="flexible-schedule">flexible/when i want (digital nomad vibes)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="entertainment">entertainment budget? 🎉</label>
+            <select id="entertainment" required>
+              <option value="">-- what's the spend? --</option>
+              <option value="minimal">under $200/month (keep it simple)</option>
+              <option value="moderate">$200-300/month (some fun)</option>
+              <option value="generous">$300-500/month (good time energy)</option>
+              <option value="luxury">$500+/month (no budget cap)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="city">ideal city vibe? 🌆</label>
+            <select id="city" required>
+              <option value="">-- pick a city --</option>
+              <option value="NYC">New York City</option>
+              <option value="LA">Los Angeles</option>
+              <option value="CHI">Chicago</option>
+              <option value="AUS">Austin</option>
+              <option value="SEA">Seattle</option>
+              <option value="MIA">Miami</option>
+              <option value="SF">San Francisco</option>
+              <option value="DEN">Denver</option>
+              <option value="BOS">Boston</option>
+              <option value="flexible">doesn't matter (flexible)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit-btn">find my dream</button>
+        </form>
+      </div>
+
+      <div id="resultsSection" class="results-section hidden">
+        <div class="results-header">
+          <h2>alright so here's what that looks like... 👀</h2>
+        </div>
+        <div id="lifeResults" class="life-results"></div>
+        <button class="reset-btn" onclick="location.reload()">
+          dream another combo
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="dream-it.js"></script>
+  </body>
+</html>

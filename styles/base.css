@@ -1,0 +1,49 @@
+/* BEM: Base Variables & Global Styles */
+
+:root {
+  --bg: #050505;
+  --card-bg: #1a1a1a;
+  --accent: #7c3aed;
+  --text: #f0f0f0;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --border-color: #2a2a2a;
+  --text-secondary: #b0b0b0;
+  --text-tertiary: #888;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family:
+    "Inter",
+    -apple-system,
+    sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Utility Gradient */
+.gradient-text {
+  background: linear-gradient(90deg, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

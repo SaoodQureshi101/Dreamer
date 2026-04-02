@@ -1,0 +1,46 @@
+/* BEM: Results Block */
+
+.results {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.results__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.results__title {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.results__intro {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.results__intro-text {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.results__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.results__footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+  color: #999;
+}
+
+.results__footer-text {
+  color: #9ca3af;
+}

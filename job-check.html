@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Check - Life Planner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container page-content">
+      <header class="page-header">
+        <a href="index.html" class="back-btn">← back</a>
+        <div>
+          <h1>job check 💼</h1>
+          <p class="page-subtitle">
+            pick a salary & city, we'll show you the lifestyle and jobs that fit
+          </p>
+        </div>
+      </header>
+
+      <div class="form-section">
+        <form id="jobForm">
+          <div class="form-group">
+            <label for="salary">what salary are we aiming for? 💰</label>
+            <select id="salary" required>
+              <option value="">-- pick a range --</option>
+              <option value="40-60">$40k - $60k (starting energy)</option>
+              <option value="60-80">$60k - $80k (leveling up)</option>
+              <option value="80-120">$80k - $120k (comfortable)</option>
+              <option value="120-180">$120k - $180k (secure af)</option>
+              <option value="180+">$180k+ (that's the dream)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="city">where you tryna be? 🌆</label>
+            <select id="city" required>
+              <option value="">-- pick a city --</option>
+              <option value="NYC">New York City</option>
+              <option value="LA">Los Angeles</option>
+              <option value="CHI">Chicago</option>
+              <option value="AUS">Austin</option>
+              <option value="SEA">Seattle</option>
+              <option value="MIA">Miami</option>
+              <option value="SF">San Francisco</option>
+              <option value="DEN">Denver</option>
+              <option value="BOS">Boston</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit-btn">check it out</button>
+        </form>
+      </div>
+
+      <div id="resultsSection" class="results-section hidden">
+        <div class="results-header">
+          <h2>here's the job that gets you there... 👀</h2>
+        </div>
+        <div id="jobResults" class="job-results"></div>
+        <button class="reset-btn" onclick="location.reload()">
+          find another job fit
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="job-check.js"></script>
+  </body>
+</html>

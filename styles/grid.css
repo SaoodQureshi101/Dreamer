@@ -1,0 +1,40 @@
+/* BEM: Grid Block */
+
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+/* Options Grid (home page) */
+.grid--options {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  width: 100%;
+}
+
+/* Life Grid (4 items) */
+.grid--life {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+/* Grid Item */
+.grid__item {
+  background: #0f0f0f;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #1a1a1a;
+}
+
+.grid__item-title {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #a78bfa;
+  font-weight: 600;
+}
+
+.grid__item-content {
+  font-size: 1rem;
+  color: #d0d0d0;
+  line-height: 1.5;
+}

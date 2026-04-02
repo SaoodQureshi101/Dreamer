@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reality Check 🎯 - Life Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container page-content">
+
+    <!-- Header -->
+    <header class="page-header">
+      <a href="index.html" class="back-btn">← Back</a>
+      <div class="header-text">
+        <h1>Reality Check 🎯</h1>
+        <p class="page-subtitle">
+          Be real about EVERYTHING and find out how it all adds up
+        </p>
+      </div>
+    </header>
+
+    <!-- Form Section -->
+    <section class="form-section">
+      <form id="realityForm">
+
+        <!-- Job Selection -->
+        <fieldset class="form-section-group">
+          <legend>The job you want 💼</legend>
+
+          <div class="form-group">
+            <label for="desiredJob">What job is calling you?</label>
+            <select id="desiredJob" required>
+              <option value="">-- Pick a job --</option>
+              <optgroup label="Creative Vibes">
+                <option value="graphic-designer">Graphic Designer</option>
+                <option value="content-creator">Content Creator</option>
+                <option value="photographer">Photographer</option>
+              </optgroup>
+              <optgroup label="Tech Life">
+                <option value="web-dev">Web Developer</option>
+                <option value="software-engineer">Software Engineer</option>
+                <option value="data-scientist">Data Scientist</option>
+              </optgroup>
+              <optgroup label="Healthcare">
+                <option value="nurse">Nurse</option>
+                <option value="doctor">Doctor</option>
+                <option value="pharmacist">Pharmacist</option>
+              </optgroup>
+              <optgroup label="Business">
+                <option value="accountant">Accountant</option>
+                <option value="marketing-manager">Marketing Manager</option>
+                <option value="consultant">Management Consultant</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option value="teacher">Teacher</option>
+                <option value="pilot">Pilot</option>
+                <option value="lawyer">Lawyer</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="jobCity">What city for the job?</label>
+            <select id="jobCity" required>
+              <option value="">-- Pick a city --</option>
+              <option value="NYC">New York City</option>
+              <option value="LA">Los Angeles</option>
+              <option value="CHI">Chicago</option>
+              <option value="AUS">Austin</option>
+              <option value="SEA">Seattle</option>
+              <option value="SF">San Francisco</option>
+              <option value="anywhere">Anywhere (Remote Energy)</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- Lifestyle Selection -->
+        <fieldset class="form-section-group">
+          <legend>The life you want ✨</legend>
+
+          <div class="form-group">
+            <label for="housing">Housing</label>
+            <select id="housing" required>
+              <option value="">-- Pick --</option>
+              <option value="studio">Studio</option>
+              <option value="1br">1 Bedroom</option>
+              <option value="2br">2 Bedroom</option>
+              <option value="house">House</option>
+              <option value="luxury">Luxury House</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="transportation">Transportation</label>
+            <select id="transportation" required>
+              <option value="">-- Choose --</option>
+              <option value="transit">Public Transit</option>
+              <option value="car">Car</option>
+              <option value="car-nice">Nice Car</option>
+              <option value="bike">Bike + Transit</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="vacation">Vacation Time</label>
+            <select id="vacation" required>
+              <option value="">-- Pick --</option>
+              <option value="2weeks">2 Weeks / Year</option>
+              <option value="3weeks">3 Weeks / Year</option>
+              <option value="4weeks">4+ Weeks / Year</option>
+              <option value="flexible">Summers Off</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="entertainment">Fun Money Budget</label>
+            <select id="entertainment" required>
+              <option value="">-- Budget --</option>
+              <option value="minimal">Under $200 / Month</option>
+              <option value="moderate">$200–300 / Month</option>
+              <option value="generous">$300–500 / Month</option>
+              <option value="luxury">$500+ / Month</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Give Me My Score</button>
+      </form>
+    </section>
+
+    <!-- Results Section -->
+    <section id="resultsSection" class="results-section hidden">
+      <div class="results-header">
+        <h2>🎯 Your Reality Check Score 🎯</h2>
+      </div>
+      <div id="scoreResults" class="score-results"></div>
+      <button class="reset-btn" onclick="location.reload()">Rate Another Combo</button>
+    </section>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    console.log("reality-check.html page loaded - inline script runs");
+  </script>
+  <script type="module" src="reality-check.js"></script>
+</body>
+</html>

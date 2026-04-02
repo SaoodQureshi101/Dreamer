@@ -1,0 +1,96 @@
+/* BEM: Responsive Design */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 24px 16px;
+  }
+
+  .home-header__title {
+    font-size: 2.5rem;
+  }
+
+  .home-page__hero-title {
+    font-size: 1.6rem;
+  }
+
+  .grid--options {
+    grid-template-columns: 1fr;
+  }
+
+  .form-section {
+    padding: 28px 20px;
+  }
+
+  .page-header,
+  .header {
+    flex-direction: column;
+  }
+
+  .page-header__title,
+  .header__title {
+    font-size: 1.8rem;
+  }
+
+  .grid--life {
+    grid-template-columns: 1fr;
+  }
+
+  .score-display {
+    padding: 32px 24px;
+  }
+
+  .score-progresss {
+    width: 180px;
+    height: 180px;
+  }
+
+  .score-number {
+    font-size: 2.5rem;
+  }
+
+  .score-title {
+    font-size: 1.5rem;
+  }
+
+  .number-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .form__input,
+  .form__select {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-header__title {
+    font-size: 2rem;
+  }
+
+  .home-page__hero-title {
+    font-size: 1.3rem;
+  }
+
+  .home-page__hero-text {
+    font-size: 0.95rem;
+  }
+
+  .page-header__title,
+  .header__title {
+    font-size: 1.5rem;
+  }
+
+  .form-section {
+    padding: 20px 16px;
+  }
+
+  .form__label {
+    font-size: 0.95rem;
+  }
+
+  .btn--primary {
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+}
